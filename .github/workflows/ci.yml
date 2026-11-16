@@ -9,5 +9,7 @@ jobs:
   test: 
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello from ${hostname}"
+      - uses: actions/checkout@v7
+      - run: echo "Hello from $(hostname)"
       - run: pwd && ls -A
+      - run: npm run lint
