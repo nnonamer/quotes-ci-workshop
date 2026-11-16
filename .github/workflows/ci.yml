@@ -9,5 +9,5 @@ jobs:
   test: 
     runs-on: ubuntu-latest
     steps:
-      - run echo "Hello from ${hostname}"
-      - run pwd && ls -la
+      - run: echo "Hello from ${hostname}"
+      - run: pwd && ls -A
